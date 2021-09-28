@@ -5,7 +5,7 @@ import time
 #place holder strings for list
 personCompitence = ["0_praktijkErvaaring", "1_praktijkEvaringTijd", "2_mbo4", "3_truckLicense", "4_ownsTopHat", "5_certificate"]
 personPhysical = ["0_name", "1_gender", "2_hairTypeOrMustache", "3_hairLength", "4_height", "5_weight"]
-distractions = ["0_clownEthics"]
+distractions = ["0_clownEthics", "1_toeLength", "3_eminem", ]
 
 #var for when user passes the test
 physicalReqPassed = False
