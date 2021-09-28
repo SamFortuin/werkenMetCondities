@@ -5,7 +5,7 @@ import time
 #place holder strings for list
 personCompitence = ["0_praktijkErvaaring", "1_praktijkEvaringTijd", "2_mbo4", "3_truckLicense", "4_ownsTopHat", "5_certificate"]
 personPhysical = ["0_name", "1_gender", "2_hairTypeOrMustache", "3_hairLength", "4_height", "5_weight"]
-distractions = ["0_clownEthics", "1_toeLength", "3_eminem", ]
+distractions = ["0_clownEthics", "1_toeLength", "2_eminem", "3_zelda"]
 
 #var for when user passes the test
 physicalReqPassed = False
@@ -18,10 +18,13 @@ personCompitence[0] = input("In welk veld heeft u praktijkervaaring\n")
 #cleanup for later if statement
 personCompitence[0] = personCompitence[0].lower().replace(" ", "").replace("-","")
 personCompitence[1] = int(input("Hoeveel jaar praktijkervaaring heeft u?\n"))
+distractions[0] = input("Heeft u de cursus clown ethiek gevolgd?\n")
 personCompitence[2] = input("Heeft u een MBO Niveau 4 diploma?\n")
 personCompitence[3] = input("Heeft u een rijbeweijs D?\n")
+distractions[3] = input("Heeft u ooit een Legend of Zelda game gespeeld?\n")
 personCompitence[4] = input("Bent u in bezit van een hoge hoed?\n")
 personPhysical[1] = input("Wat is uw geslacht?\n")
+distractions[2] = input("Heeft u ooit geluistered naar eminem?\n")
 #lower for if statement
 personPhysical[1] = personPhysical[1].lower()
 
@@ -56,6 +59,7 @@ else:
 personPhysical[4] = input("Wat is uw lengte in centimeters\n")
 personPhysical[4] = personPhysical[4].lower().replace("cm","").replace(" ","")
 personPhysical[4] = int(personPhysical[4])
+distractions[2] = input("Wat is de lengte van uw linker grote teen?\n")
 personPhysical[5] = int(input("Wat is ue gewicht in kilo's?\n"))
 personCompitence[5] = input("Heeft u het certificaat Overleven met gevaarlijk personeel?\n")
 
